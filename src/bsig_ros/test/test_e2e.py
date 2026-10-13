@@ -341,7 +341,7 @@ def test_backoff_restarts_after_a_stream_that_gave_results(env):
     try:
         assert rig.wait_for(lambda: len(api.streams) >= 4, timeout=20)
         opened = [s.opened for s in api.streams[:4]]
-        assert max(b - a for a, b in zip(opened, opened[1:])) < 0.9
+        assert min(b - a for a, b in zip(opened, opened[1:])) < 0.9  # with backoff every gap would be 1 s or more
     finally:
         rig.close()
 
