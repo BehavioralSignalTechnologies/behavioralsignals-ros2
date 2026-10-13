@@ -1,0 +1,12 @@
+/**:
+  ros__parameters:
+    endpoint: streaming.behavioralsignals.com:443
+    use_tls: true
+    # method: StreamAudio  # StreamAudio | DeepfakeDetection. The launch file sets it for each bridge
+    level: all           # all | segment | utterance
+    logits: false        # true fills Prediction.logit
+    sample_rate: 16000   # used only when no audio_info message arrives
+    chunk_ms: 250        # 100 to 500
+    idle_timeout_s: 0.0  # 0 = off. Seconds without audio before the stream ends
+    audio_qos_reliability: reliable  # reliable | best_effort
+    time_constant_s: 3.0 # bsig_affect smoothing
