@@ -1,6 +1,7 @@
 # behavioralsignals-ros2
 
 [![CI](https://github.com/BehavioralSignalTechnologies/behavioralsignals-ros2/actions/workflows/ci.yml/badge.svg)](https://github.com/BehavioralSignalTechnologies/behavioralsignals-ros2/actions/workflows/ci.yml)
+[![Release](https://badgen.net/github/release/BehavioralSignalTechnologies/behavioralsignals-ros2)](https://github.com/BehavioralSignalTechnologies/behavioralsignals-ros2/releases)
 [![License](https://badgen.net/badge/license/Apache-2.0/blue)](LICENSE)
 [![ROS 2 Jazzy](https://badgen.net/badge/ROS%202/Jazzy/22314e)](https://docs.ros.org/en/jazzy/)
 
