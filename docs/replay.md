@@ -42,6 +42,8 @@ the recording plus about 15 s.
 tools/replay.sh recording_audio recording_results 80
 ```
 
+Both bridges log `no AudioInfo received, assuming mono S16LE at 16000 Hz` at the start. This is expected here. The bridges start a few seconds before the bag plays, and the recording is 16 kHz, so the assumed rate is right.
+
 4. Print the timeline.
 
 ```
