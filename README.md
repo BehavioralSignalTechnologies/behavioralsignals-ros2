@@ -133,6 +133,7 @@ The audio message type is `audio_common_msgs/AudioDataStamped`.
   message of the stream, plus the API's relative times. Every reconnect starts a new stream and a new time origin.
 - `level` is `segment` (2 s windows) or `utterance`. Utterance results arrive late and cover earlier time.
 - `posterior` is NaN when the API does not return it. `logit` is NaN unless `logits` is true.
+- A task named `features` with an empty label and NaN values is an empty placeholder for the behavioral embedding. Ignore it.
 - A label with a low posterior is weak. Choose a `posterior` threshold for your use. 0.7 is a good start.
 
 `bsig/affect` carries `Affect`, made by `bsig_affect` from segment results:
